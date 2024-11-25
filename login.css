@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+     font-family: "Sofia Sans", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(14, 14, 14);
+}
+.main{
+    width: 50%;
+    height: 140vh;
+    position: relative;
+    left: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    /* border: 2px solid red; */
+}
+.logo img{
+    width: 10rem;
+}
+.circleCont{
+    display: flex;
+}
+.circle{
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.line{
+    background-color: #fff;
+    height: 2px;
+    width: 80px;
+    margin-top: 14px;
+}
+.main h2{
+    margin-top: 4rem;
+    font-size: 20px;
+}
+.main p{
+    font-size: 15px;
+    margin: 1rem;
+}
+input{
+    width: 410px;
+    padding: 8px 0;
+    padding-left: 20px;
+    font-size: 20px;
+    color: #000;
+    border-radius: 28px;
+    border: none;
+    outline: none;
+}
+label{
+    margin-right: 310px;
+    margin-bottom: 8px;
+    margin-top: 30px;
+}
+label:first-of-type{
+    margin-right: 350px;
+}
+/* Change the country name text color in the dropdown to black */
+.iti__country-name {
+    color: black !important;
+}
+
+/* Ensure the dropdown background color doesn't interfere with the text color */
+.iti__flag-container {
+    background-color: #f1f1f1 !important;  /* Optional: You can change the background to any color */
+}
+
+/* Optional: Change the selected country flag and name dropdown background */
+.iti__country.iti__active {
+    background-color: #e5e5e5 !important; /* Change the background color when the country is active */
+    color: black !important; /* Ensure the text color stays black */
+}
+
+/* Adjust the dropdown border for better visibility */
+.iti__selected-flag {
+    border: 1px solid #ccc !important;
+    background-color: #000;
+}
+.btn{
+    width: 350px;
+    padding: 14px 0;
+    font-size: 16px;
+    margin-top: 25px;
+    border-radius: 28px;
+    border: none;
+    color: #000;
+    font-weight: 700;
+    background-color: rgb(34, 34, 36);
+}
+.imgSec{
+    display: flex;
+    margin-top: 25px;
+    gap: 20px;
+}
+.imgSec img{
+    height: 20px;
+}
+
+
+
+/* responsive */
+
+@media (max-width:800px) {
+    input{
+        width: 350px;
+    }
+    label{
+        margin-right: 250px;
+    }
+    label:first-of-type{
+        margin-right: 290px;
+    }
+}
+@media (max-width:670px){
+input{
+    width: 300px;
+}
+label{
+    margin-right: 221px;
+}
+label:first-of-type {
+width: 6px;
+}
+}
+@media (max-width:600px){
+    input{
+        width: 355px;
+    }
+    label{
+        margin-right: 82px;
+        width: 80%;
+    }
+    label:first-of-type {
+        margin-right: 328px;
+    }
+    label:last-of-type {
+    margin-right: 93px;
+    }
+}
+@media (max-width:500px){
+    input{
+        width: 323px;
+    }
+    label{
+        margin-right: 104px;
+    }
+    label:first-of-type {
+        margin-right: 302px;
+    }
+    label:last-of-type {
+        margin-right: 124px;
+    }
+}
